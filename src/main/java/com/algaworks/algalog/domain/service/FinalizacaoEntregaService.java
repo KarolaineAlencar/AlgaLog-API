@@ -20,7 +20,7 @@ public class FinalizacaoEntregaService {
 	public void finalizar(Long entregaId) {
 		Entrega entrega = buscaEntregaService.buscar(entregaId);
 		
-		entrega.finalizar();
+		entrega.finalizar();	
 		
 		entregaRepository.save(entrega);
 	}
